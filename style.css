@@ -1,0 +1,92 @@
+
+body {
+	background-color: #0079BF;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+.board h1 {
+	color: white;
+	font-size: 40px;
+}
+.column {
+	background-color: rgb(199, 227, 244);
+	border-radius: 5px;
+	position: relative;
+  	display: inline-block;
+  	width: 200px;
+  	float: left;
+  	margin-top: 20px;
+  	margin-right: 10px;
+ 	padding-right: 5px;
+ 	box-shadow: 0 8px 6px -6px black;		 	
+}
+.column .column-title {
+	color: #0079BF;
+}
+.board {
+	margin: 0 auto;
+	text-align: center;
+	width: 1200px;
+	background-color: #66A4C8;
+	border-radius: 5px;
+	box-shadow: 0 8px 6px -6px black;
+}
+.board .create-column {
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	font-size: 15px;
+	line-height: 40px;
+	margin-bottom: 5px;
+	font-family: 'Gloria Hallelujah', cursive;
+	background-color: #4385AC;
+	border-radius: 5px;
+	color: white;
+}
+.board .create-column:hover {
+	color: white;
+	background-color: #0079BF;
+}
+.btn-delete {
+	color: #296D96;
+	border: none;
+	cursor: pointer;
+	background-color: rgb(199, 227, 244);
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 20px;
+	line-height: 30px;
+	float: right;
+}
+.btn-delete:hover {
+	font-size: 25px;
+	color: red;
+	transition: font-size 0.5s, color 0.5s;
+	transition-timing-function: ease;
+}
+.column-card-list {
+	padding: 10px;
+	margin-top: 10px;
+	list-style-type: none;
+	
+}
+.column-card-list .card {
+	border: dashed 2px #296D96;
+	margin-top: 5px;
+	cursor: pointer;
+	background-color: #C7E3F4;
+}
+.card-description {
+	color: #0079BF;
+}
+.add-card {
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	line-height: 30px;
+	font-family: 'Gloria Hallelujah', cursive;
+	background-color: #4385AC;
+	color: white;
+}
+.add-card:hover {
+	cursor: pointer;
+	background-color: #0079BF;
+}

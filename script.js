@@ -105,18 +105,26 @@ $(document).ready(function(){
 	// TWORZENIE KOLUMN 
 	var todoColumn = new Column('Do zrobienia'); 
 	var doingColumn = new Column('W trakcie'); 
-	var doneColumn = new Column('Skończone'); 
+	var doneColumn = new Column('Skończone');
+	var toCheckColumn = new Column('Do sprawdzenia'); 
 
 	// DODAWANIE KOLUMN DO TABLICY 
 	board.addColumn(todoColumn); 
 	board.addColumn(doingColumn); 
-	board.addColumn(doneColumn); 
+	board.addColumn(doneColumn);
+	board.addColumn(toCheckColumn); 
 
 	// TWORZENIE NOWYCH EGZEMPLARZY KART 
-	var card1 = new Card('Nowe zadanie'); 
-	var card2 = new Card('Stworzyc tablice kanban'); 
+	var card1 = new Card('Posprzątać :)'); 
+	var card2 = new Card('Stworzyć tablice kanban');
+	var card3 = new Card('Stworzyć portfolio');
+	var card4 = new Card('Wypić kawę');
+	var card5 = new Card('Sprawdzić pracę domową K.') 
 
 	// DODAWANIE KART DO KOLUMN 
 	todoColumn.addCard(card1); 
 	doingColumn.addCard(card2);
+	todoColumn.addCard(card3);
+	toCheckColumn.addCard(card5);
+	doneColumn.addCard(card4);
 });
